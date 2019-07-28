@@ -1,0 +1,37 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+} 
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bungee Outline', cursive;
+    color: magenta;
+    background: rgb(41, 39, 53);
+}
+
+section.board {
+    display: grid;
+    grid-template-columns: repeat(3, 10vmin);
+    grid-template-rows: repeat(3, 10vmin);
+    grid-gap: 1vmin;
+    margin-bottom: 10vmin;
+    
+}
+
+section.board div {
+    border: 1vmin solid magenta;
+    border-style: outset;
+    border-radius: 20px;
+}
+
+button {
+    color: magenta;
+    background-color: rgb(41, 39, 53);
+    border-color: magenta;
+    border-style: outset;
+    font-size: 24px;
+    font-family: 'Bungee Outline', cursive;
+    
+}
